@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+input{
+    box-sizing:border-box
+}
+body {
+    /*background: #000000; /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to left, #000000 , #434343); /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to left, #000000 , #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display:flex;
+    height:98%;
+    width:98%;
+}
+#login_body{
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#loginHeader{
+    overflow: hidden;
+    background: #67B26F; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #67B26F , #4ca2cd); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #67B26F , #4ca2cd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    position: relative;
+    height: 100px;
+    width: inherit;
+
+    
+    z-index: 1;
+}
+img{
+    display: inline;
+    max-width:70px;
+    max-height:95px;
+    padding: 0.5em;
+    width: auto;
+    height: auto;
+    vertical-align:middle
+}
+#title{
+    font-family: "Roboto", sans-serif;
+    display: inline;
+    vertical-align: middle;
+    font-size: 200%;
+}
+#middle{
+    position: relative; /* needed for stacking */
+    width: 100%;
+    height: 100%;
+}
+#loginRect{
+    background: #E6DADA; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #E6DADA , #274046); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #E6DADA , #274046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-width: 300px;
+    min-height: 200px;
+    max-width: 10%;
+    max-height: 10%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px 3px #990000, -5px -5px 10px 3px #990000;
+    position: relative;
+    padding: 2em;
+    
+    left: 25%;
+}
+#inputRect{
+    width: 100%;
+}
+#input{
+    font-family: "Roboto", sans-serif;
+    width:inherit;
+    display:table-cell; 
+    box-shadow: 1px 1px 10px black;
+    padding: 12px;
+    margin: 5px auto;
+    border-radius: 6px;
+}
+#buttonRect{
+    width:inherit;
+}
+#submit{
+    display: block;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    width:100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 15px 0;
+    border-radius: 6px;
+    cursor: pointer;
+}

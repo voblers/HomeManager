@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <wicket:head> 
+            <wicket:link> 
+                <link rel="stylesheet" type="text/css" href="login.css"/> 
+            </wicket:link> 
+        </wicket:head> 
+    </head>
+    <body>
+        <div id="login_body">
+            <div id="loginHeader">
+                <a href="/mavenproject1"><img src="http://www.phuket-technology.com/wp-content/uploads/2015/02/icon-smart-house.png" alt=""/></a>
+                <div id="title">
+                    Home manager
+                </div>
+            </div>
+            <div id="middle">
+                <span>hello</span>
+                <div id="loginRect">
+                    <form wicket:id="loginForm">
+                        <div id="inputRect">
+                            <input id="input" wicket:id="username" type="text" placeholder="Username"/>
+                            <input id="input" wicket:id="pass" type="password" placeholder="Password"/>
+                        </div>
+
+                        <div id="buttonRect">
+                            <input id="submit" type="submit" value="Login" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

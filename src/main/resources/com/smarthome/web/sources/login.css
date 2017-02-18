@@ -1,17 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+*{
+    -webkit-font-smoothing: antialiased;
+}
 input{
     box-sizing:border-box
 }
 body {
-    /*background: #000000; /* fallback for old browsers */
-    /*background: -webkit-linear-gradient(to left, #000000 , #434343); /* Chrome 10-25, Safari 5.1-6 */
-    /*background: linear-gradient(to left, #000000 , #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: url(images/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     font-family: "Roboto", sans-serif;
-    -webkit-font-smoothing: antialiased;
     display:flex;
     height:98%;
     width:98%;
@@ -26,21 +26,17 @@ body {
 }
 #loginHeader{
     overflow: hidden;
-    background: #67B26F; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #67B26F , #4ca2cd); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #67B26F , #4ca2cd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: url(images/header.jpg) no-repeat center center fixed;
     position: relative;
-    height: 100px;
     width: inherit;
-
-    
     z-index: 1;
+    
+    box-shadow: 3px 3px 5px 3px #8b0000;
 }
 img{
     display: inline;
     max-width:70px;
-    max-height:95px;
+    max-height:55px;
     padding: 0.5em;
     width: auto;
     height: auto;
@@ -51,6 +47,7 @@ img{
     display: inline;
     vertical-align: middle;
     font-size: 200%;
+    color: white;
 }
 #middle{
     position: relative; /* needed for stacking */
@@ -66,11 +63,12 @@ img{
     max-width: 10%;
     max-height: 10%;
     border-radius: 25px;
-    box-shadow: 5px 5px 10px 3px #990000, -5px -5px 10px 3px #990000;
-    position: relative;
-    padding: 2em;
+    box-shadow: 3px 3px 5px 3px #8b0000, -3px -3px 5px 3px #8b0000;
     
-    left: 25%;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    padding: 2em;
+    margin: auto;
 }
 #inputRect{
     width: 100%;

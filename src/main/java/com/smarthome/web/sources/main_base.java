@@ -15,6 +15,5 @@ public class main_base extends WebPage{
     public main_base(){
         super();
         add(new login_header("login_header"));
-        System.out.println("Base page class loaded");
     }
 }

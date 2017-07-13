@@ -16,50 +16,72 @@
     
     <dependencies>
         <dependency>
-            <groupId>unknown.binary</groupId>
-            <artifactId>slf4j-api-1.4.2</artifactId>
-            <version>SNAPSHOT</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
         </dependency>
         <dependency>
-            <groupId>unknown.binary</groupId>
-            <artifactId>slf4j-jdk14-1.4.2</artifactId>
-            <version>SNAPSHOT</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-jdk14</artifactId>
+            <version>1.7.25</version>
         </dependency>
         <dependency>
-            <groupId>unknown.binary</groupId>
-            <artifactId>wicket-core-6.0.0</artifactId>
-            <version>SNAPSHOT</version>
+            <groupId>org.apache.wicket</groupId>
+            <artifactId>wicket-core</artifactId>
+            <version>8.0.0-M6</version>
+            <type>jar</type>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.wicket/wicket-devutils -->
         <dependency>
-            <groupId>unknown.binary</groupId>
-            <artifactId>wicket-devutils-6.0.0</artifactId>
-            <version>SNAPSHOT</version>
+            <groupId>org.apache.wicket</groupId>
+            <artifactId>wicket-devutils</artifactId>
+            <version>8.0.0-M6</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.wicket/wicket-extensions -->
         <dependency>
-            <groupId>unknown.binary</groupId>
-            <artifactId>wicket-extensions-6.0.0</artifactId>
-            <version>SNAPSHOT</version>
+            <groupId>org.apache.wicket</groupId>
+            <artifactId>wicket-extensions</artifactId>
+            <version>8.0.0-M6</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.wicket/wicket-ioc -->
         <dependency>
-            <groupId>unknown.binary</groupId>
-            <artifactId>wicket-ioc-6.0.0</artifactId>
-            <version>SNAPSHOT</version>
+            <groupId>org.apache.wicket</groupId>
+            <artifactId>wicket-ioc</artifactId>
+            <version>8.0.0-M6</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.wicket/wicket-request -->
         <dependency>
-            <groupId>unknown.binary</groupId>
-            <artifactId>wicket-request-6.0.0</artifactId>
-            <version>SNAPSHOT</version>
+            <groupId>org.apache.wicket</groupId>
+            <artifactId>wicket-request</artifactId>
+            <version>8.0.0-M6</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.wicket/wicket-util -->
         <dependency>
-            <groupId>unknown.binary</groupId>
-            <artifactId>wicket-util-6.0.0</artifactId>
-            <version>SNAPSHOT</version>
+            <groupId>org.apache.wicket</groupId>
+            <artifactId>wicket-util</artifactId>
+            <version>8.0.0-M6</version>
         </dependency>
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
             <version>7.0</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>unknown.binary</groupId>
+            <artifactId>hibernate-jpa-2.1-api-1.0.0.Final</artifactId>
+            <version>SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.2.10.Final</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>2.3.4</version>
         </dependency>
     </dependencies>
 

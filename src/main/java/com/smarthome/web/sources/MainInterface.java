@@ -12,7 +12,6 @@ package com.smarthome.web.sources;
 public class MainInterface extends main_base{
 
     public MainInterface() {
-        System.out.println("MainInterface loaded");
     }
     
 }

@@ -5,6 +5,8 @@
  */
 package com.smarthome.web.sources;
 
+import org.apache.wicket.request.mapper.parameter.PageParameters;
+
 /**
  *
  * @author Kaspa

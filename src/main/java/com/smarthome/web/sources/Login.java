@@ -5,12 +5,12 @@
  */
 package com.smarthome.web.sources;
 
+import com.smarthome.web.authentication.LoginSession;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.form.StatelessForm;
 import org.apache.wicket.markup.html.form.PasswordTextField;
 import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.model.Model;
-import org.apache.wicket.request.mapper.parameter.PageParameters;
 
 /**
  *
@@ -30,11 +30,12 @@ public class Login extends WebPage {
             protected void onSubmit() {
                 super.onSubmit(); //To change body of generated methods, choose Tools | Templates.
                 
-                if (username.getValue().equals("admin") && pass.getValue().equals("admin")) {
+                LoginSession session = getMySession();
+                if (session.signIn(username.getValue(), pass.getValue())) {
+                    continueToOriginalDestination();
                     setResponsePage(MainInterface.class);
                 } else {
-                    System.out.println("Returning to HomePage");
-                    setResponsePage(Application.get().getHomePage(), new PageParameters());
+                    setResponsePage(Application.get().getHomePage());
                 }
             }
         };
@@ -43,4 +44,19 @@ public class Login extends WebPage {
         form.add(username);
         form.add(pass);
     }
+
+    private LoginSession getMySession() {
+        return (LoginSession) getSession();
+    }
+
+    @Override
+    protected void onConfigure() {
+        super.onConfigure(); //To change body of generated methods, choose Tools | Templates.
+        
+        if(getMySession().isSignedIn()){
+            setResponsePage(MainInterface.class);
+        }
+    }
+    
+    
 }
